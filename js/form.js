@@ -23,10 +23,10 @@ function Post(form) {
     console.log(data);
     console.table(data);
 
-    // Chama a função de agradecimento
+    
     Enviar();
 
-    // Impede o recarregamento da página
+    
     return false;
 }
 

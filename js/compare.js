@@ -1,5 +1,4 @@
 
-//car
 let carArr = [];
 
 class Car {
@@ -20,7 +19,7 @@ class Car {
     }
 }
 
-// search on array if exist carClass returning 1 if not return -1
+
 function GetCarArrPosition(arr, carClass) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].nome === carClass.nome)

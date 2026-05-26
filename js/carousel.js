@@ -7,7 +7,7 @@ class Carousel {
         this.link = link;
     }
 
-    // Inicia o carrossel
+    
     static Start(arr) {
         if (!arr || arr.length === 0) {
             throw "Method Start need a Array Variable.";
@@ -26,7 +26,7 @@ class Carousel {
         }, 5000);
     }
 
-    // Exibe a imagem atual
+    
     static Show() {
         let item = Carousel._arr[Carousel._sequence];
 
@@ -40,7 +40,7 @@ class Carousel {
             `<a href="${item.link}">${item.titulo}</a>`;
     }
 
-    // Avança para a próxima imagem
+    
     static Next() {
         Carousel._sequence++;
 
@@ -51,7 +51,7 @@ class Carousel {
         Carousel.Show();
     }
 
-    // Volta para a imagem anterior
+    
     static Prev() {
         Carousel._sequence--;
 
